@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="indexTEST.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<section>
+		<h1>Параграф, ссылки, отступ, первые семантические теги, CSS</h1>
+
+		<p>Paragraph - параграф с новой строки</p>
+
+		<span>не</span>
+		<span>с новой</span>
+		<span>строки, если span</span>
+		<p class="ClassStrongerThenTeg">Оформление класса перебило оформление тега параграфа</p>
+
+		<p id="IdStrongerThenClass" class="ClassStrongerThenTeg">Оформление id перебило оформление и class, и teg p</p>
+
+		<p style="color: chartreuse;" id="IdStrongerThenClass" class="ClassStrongerThenTeg">Оформление style
+			внутри перебило все остальные оформления</p>
+
+		<p>А если в любой стиль добавить !important - то он перебьет все. Например, р {color: brown !important;} вписанный
+			в css сделает коричневым ВСЕ направления, какие классы и id ему не давай. Не стоит им пользоваться, лучше
+			только Классами!</p>
+
+		<a href="http://htmlbook.ru/html/a">link</a>
+
+		<br> отступ br
+
+		<a href="http://htmlbook.ru/html/a/target" target="_blank">эта ссылка откроется в новом окне</a>
+	</section>
+	<main>
+		<h1>Таблицы. Нумерованный и точечных список.</h1>
+		<ol class="list"> Ordered list
+			<li class="listItem">list item один</li>
+			<li class="listItem">list item два </li>
+			<li class="listItem">list item три </li>
+		</ol>
+		<p class="listItem">Параграф с классом listItem, но не внутри класса List, поэтому не оранжевый </p>
+		<ul class="collection"> Unordered list
+			<li>list item 1</li>
+			<li>list item 2 </li>
+			<li>list item 3 </li>
+		</ul>
+		<br>
+		<table> Начало таблицы table
+			<thead>Шапка таблицы</thead>
+			<tbody>
+				<tr>
+					<td>table row 1</td>
+					<td>table row 2</td>
+					<td colspan="2">table row 3</td>
+					<td>table row 5</td>
+				</tr>
+				<tr>
+					<td>table row 1</td>
+					<td>table row 2</td>
+					<td>table row 3</td>
+					<td>table row 4</td>
+					<td>table row 5</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img class="Image" alt="RSschoolImage" src="https://rs.school/images/partners/logo-github.png">
+		<p><a href="http://htmlbook.ru/html/img">Ссылка на атрибуты img</a></p>
+
+		<div class="coolImage"></div>
+
+
+		<form>
+			Сделать текст, input и button вместе в одну form
+			<input />
+			<button>Submit</button>
+		</form>
+	</main>
+	<section>
+		<div></div>
+
+		<p class="paragraph">Новый класс</p>
+		<p class="paragraph special">Новый класс с уточнением</p>
+	</section>
+	<table>
+		<!-- <colgroup>
+			<col>
+			<col style="background-color: yellow">
+		</colgroup> -->
+		<tr>
+			<th>1</th>
+			<th>2</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td rowspan="2">7</td>
+		</tr>
+		<tr>
+			<td>8</td>
+		</tr>
+	</table>
+
+	<div class="creature"></div>
+</body>
+
+</html>
